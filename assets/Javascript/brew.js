@@ -34,6 +34,13 @@
 //   google.maps.event.addDomListener(window, 'load', initialize);
 
 
+
+$(document).ready(function() {
+  $('.button').click(function() {
+    alert($('.form-control').val());
+  });
+});
+
 var geocoder;
 var map;
 var infowindow;
