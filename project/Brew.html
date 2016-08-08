@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Brew</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
+		<link rel="stylesheet" type="text/css" href="assets/DOK.css">
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyB_kG_nhiToIOWJlC9F9ymsypE583-cPPc"></script>
+	</head>
+
+<body>
+	<header>
+		<!-- Navigation Bar -->
+		<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" style="font-family: 'Roboto Condensed', sans-serif"; href="#">Brew</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li class="resource"><a href="#" class="Locations">Locations</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="search-button">
+          <a href="#" class="toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span>Login/ Sign In</span></a>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+	</header>
+
+		<div id="bodybox">
+				<h1 style="font-family: 'Roboto Condensed', sans-serif">Awaken the Senses</h1>
+				
+				<!-- Search Bar -->
+			<div class="search body">
+				<div class="input-group input-group-lg">
+					<ul class="targed search">
+						<input type="text" class="form-control" placeholder="Enter coffee shop or Zip Code" aria-describedby="basic-addon1">
+						 <span class="input-group-addon" id="basic-addon1" class="glyphicon glyphicon-search" aria-hidden="true">Search</span>
+					</ul>
+			 	</div>
+			</div>
+		</div>
+			<div id="map">
+			</div>
+				<script>
+					var map;
+					function initialize() {
+						var center = new google.maps.LatLng(28.7442507,-81.3076821);
+						map = new google.maps.Map(document.getElementById('map'), {
+							center: center,
+							zoom: 16
+						});
+					}
+
+					google.maps.event.addDomListener(window, 'load', initialize);
+				</script>
+	<footer id="bottom-section">
+		<div class="container">
+			<div class="copyright">
+				<p>@2016 - Brew Information & Resources</p>
+			</div>
+				<div class="top-page">
+					<a href="#" class="top-scroll">
+					<span class="glyphicon glyphicon-chevron-up" aria-hidden="true">
+						<br>
+						"Back to Top"
+					</span>
+						
+					</a>
+				</div>
+		</div>
+	</footer>
+</body>
+</html>
