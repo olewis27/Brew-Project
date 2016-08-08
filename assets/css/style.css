@@ -1,5 +1,5 @@
 body {
-	background-image: url(images/brew.jpg);
+	background-image: url(../images/brew.jpg);
 
 }
 
@@ -51,7 +51,7 @@ h1 {
 	left: 0;
 	position: fixed;
 	padding: 0px;
-	
+
 }
 
 #bottom-section {
