@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Brew</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyB_kG_nhiToIOWJlC9F9ymsypE583-cPPc"></script>
+		<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+        <script src="sha1.js"></script>
+        <script src="oauth.js"></script>
+		<script src="yelp.js"></script> 
+	</head>
+
+<body>
+	<header>
+			<!-- Navigation Bar -->
+		<nav class="navbar navbar-inverse">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" style="font-family: 'Roboto Condensed', sans-serif;" href="index.html">Brew</a>
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		        <li class="info"><a href="#">About</a></li>
+		        <li><a href="index2.html">Contact</a></li>
+		        <li class="resource"><a href="#" class="Locations">Locations</a>
+		        </li>
+		      </ul>
+		      <ul class="nav navbar-nav navbar-right">
+		        <li class="search-button">
+		          <a href="#" class="toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span>Login/ Sign In</span></a>
+		        </li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+	</header>
+
+		<div id="bodybox">
+				<h1 style="font-family: 'Roboto Condensed', sans-serif">Awaken the Senses</h1>
+
+				<!-- Search Bar -->
+			<div class="search-body">
+					<div class="input-group">
+				      <span class="input-group-btn">
+				      	<input id="myAddress" type="text" class="form-control" placeholder="Enter city, neighborhood, Zip Code" style="width: 400px; margin-left: 50px;">
+				        <button class="btn btn-default" type="button" id="search">Search</button>
+				      </span>
+				    </div>
+			    <div id="coffee-container"></div>
+			</div>
+		</div>
+			<div class="about-us">
+				<p>Coffee may be just some morning drink to some that don’t appreciate it’s rich and bold flavors, that make for the best pick-me-up at the start of every good day!  But any coffee addict will understand the struggles of basically signing your paycheck over to your local Starbucks.  But the true Café supporters know where to find the hidden gems that make any coffee connoisseurs day.</p>
+				
+				<p>That is what you are here for, and what we strive to deliver every day!  Our primary goal is to provide you with the means of locating these hidden gems in your very own backyard.  That Café that you’ve never heard about, but the minute you mention the name to anyone everyone can’t stop raving about it.</p>
+				
+				<p>Please reach out at any time and let us know about your experiences whether good, bad or spunky…We love the feedback either way.</p>
+			
+
+				<pre id="target" class="">
+	       			</pre>
+
+				<div id="map">
+				</div>
+			</div>
+	<footer id="bottom-section">
+		<div class="container">
+			<div class="copyright">
+				<p>@2016 - Brew Information & Resources</p>
+			</div>
+				<div class="top-page">
+					<a href="#" class="top-scroll">
+						<span class="glyphicon glyphicon-chevron-up" aria-hidden="true">
+							<br>
+							"Back to Top"
+						</span>
+					</a>
+				</div>
+		</div>
+	</footer>
+</body>
+</html>
