@@ -11,7 +11,7 @@
 		<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
         <script src="sha1.js"></script>
         <script src="oauth.js"></script>
-		<script src="yelp.js"></script> 
+		<script src="brew.js"></script> 
 	</head>
 
 <body>
@@ -48,34 +48,40 @@
 		</nav>
 	</header>
 
-		<div id="bodybox">
+		<div class="container" id="bodybox">
 				<h1 style="font-family: 'Roboto Condensed', sans-serif">Awaken the Senses</h1>
 
 				<!-- Search Bar -->
 			<div class="search-body">
 					<div class="input-group">
 				      <span class="input-group-btn">
-				      	<input id="myAddress" type="text" class="form-control" placeholder="Enter city, neighborhood, Zip Code" style="width: 400px; margin-left: 50px;">
+				      	<input id="myAddress" type="text" class="form-control" placeholder="Enter city, neighborhood, Zip Code" style="width: 400px; margin-right: 50px;">
 				        <button class="btn btn-default" type="button" id="search">Search</button>
 				      </span>
 				    </div>
 			    <div id="coffee-container"></div>
 			</div>
 		</div>
-			<div class="about-us">
-				<p>Coffee may be just some morning drink to some that don’t appreciate it’s rich and bold flavors, that make for the best pick-me-up at the start of every good day!  But any coffee addict will understand the struggles of basically signing your paycheck over to your local Starbucks.  But the true Café supporters know where to find the hidden gems that make any coffee connoisseurs day.</p>
+			
+		<div class="container" class="about-us">
+
+			<div class="text-right">
+
+				<p>Coffee may just be a beverage to some, but any coffee addict will understand the daily struggle of signing your paycheck over to the local Starbucks.  Sure you will get the necessary pick-me-up after waiting in the long lines and over paying for the green logo.  However, the world of unique drink recipes and Cafés is so much more than Starbucks & Dunkin Donuts.</p>
 				
 				<p>That is what you are here for, and what we strive to deliver every day!  Our primary goal is to provide you with the means of locating these hidden gems in your very own backyard.  That Café that you’ve never heard about, but the minute you mention the name to anyone everyone can’t stop raving about it.</p>
 				
-				<p>Please reach out at any time and let us know about your experiences whether good, bad or spunky…We love the feedback either way.</p>
+				<!-- <p>Please reach out at any time and let us know about your experiences whether good, bad or spunky…We love the feedback either way.</p> -->
 			
 
-				<pre id="target" class="">
-	       			</pre>
+				<pre id="target" class=""></pre>
 
-				<div id="map">
-				</div>
 			</div>
+
+			<div id="map"></div>
+
+		</div>
+
 	<footer id="bottom-section">
 		<div class="container">
 			<div class="copyright">
@@ -83,9 +89,9 @@
 			</div>
 				<div class="top-page">
 					<a href="#" class="top-scroll">
-						<span class="glyphicon glyphicon-chevron-up" aria-hidden="true">
+						<span class="glyphicon glyphicon-chevron-up" aria-hidden="true" id="backTop">
 							<br>
-							"Back to Top"
+						"To Top"
 						</span>
 					</a>
 				</div>

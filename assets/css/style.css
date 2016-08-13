@@ -1,5 +1,6 @@
 body {
-	background-image: url(../images/brew.jpg);
+	background-image: url(../images/Brew.jpg);
+
 
 }
 
@@ -22,24 +23,36 @@ body {
 }
 
 h1 {
-	width: 500px;
+	width: 200px;
 	font-size: 50px;
-	margin-left: 100px;
-	margin-top: 100px;
+    position: absolute;
+    margin-top: 5px;
+    padding: 5px;
+    left: 0;
+    top: 10%;
+    width: 100%;
+    text-align: center;
 	color: white;
-	text-shadow: 1px 1px 2px black, 0 0 25px brown, 0 0 5px saddlebrown;
+	text-shadow: 5px 5px 6px grey, 0 0 25px brown, 0 0 5px saddlebrown;
 }
 
-.about-us {
-	width: 700px;
-	height: 300px;
-	margin: 0;
-	margin-left: 300px;
-	padding: 20px;
+.text-right {
+	text-align: center;
+	margin-top: 50px;
+	margin-left: 100px;
+	padding: 30px;
 	font-family: 'Roboto Condensed', sans-serif;
 	font-size: 18px;
 	color: white;
-	text-shadow: 1px 1px 2px black, 0 0 25px brown, 0 0 5px saddlebrown;
+	text-shadow: 5px 5px 6px black, 0 0 25px brown, 0 0 5px saddlebrown;
+}
+
+#target {
+	padding: 4px;
+	background-color: grey;
+	border-color: saddlebrown;
+	border-style: blur;
+
 }
 
 .glyphicon-chevron-up {
@@ -63,20 +76,41 @@ label {
 .btn-md {
 	background-color: #4d4141;
 	color: white;
-	text-shadow: 1px 1px 2px black, 0 0 25px brown, 0 0 5px saddlebrown;
+	text-shadow: 3px 3px 4px black, 0 0 25px brown, 0 0 5px saddlebrown;
+}
+
+.search-body {
+	float: left;
+	margin-top: 265px;
+	margin-left: 0;
+	position: absolute;
+    display: inline-block;
+    padding: 25px;
+    background-position: left;
 }
 
 #map {
-	height: 400px;
-	right: 0;
-	left: 0;
+	height: 450px;
+	width: 600px;
+	float: left;
+	margin-top: 65px;
+	margin-bottom: 125px;
 	position: fixed;
-	padding: 0px;
+    display: inline-block;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    transition: 0.3s;
+    background-position: left;
 }
 
+div.container {
+	margin-left: 50px;
+	margin-right: 50px;
+}
 #bottom-section {
-	height: 110px;
-	position: absolute;
+	height: 100px;
+	position: fixed;
 	right: 0;
 	left: 0;
 	bottom: 0;
@@ -86,5 +120,46 @@ label {
 	text-shadow: 1px 1px 2px black, 0 0 25px brown, 0 0 5px saddlebrown;
 	background-size: cover;
 	background-position: center;
+}
 
+.copyright {
+	margin-left: 125px;
+	margin-right: 50px;
+	padding-top: 10px;
+}
+
+#backTop {
+	margin-left: 130px;
+	margin-right: 50px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+@media only screen and (max-width: 980px) {
+	.container {
+		padding: 0 20px;
+		max-width: 500px;
+		text-align: center;
+		width: 100%;
+	}
+	input {
+		width: 100%;
+	}
+	h1 {
+		width: 100%;
+	}
+	#map {
+		width: 100%;
+		margin-bottom: 20px;
+		margin-top: 10px;
+	}
+	#search {
+		width: 100%;
+		margin: 0 0 15px 0; 
+	}
+
+	.search-body {
+		width: 100%;
+		margin: 0 0 15px 0; 
+	}
 }
